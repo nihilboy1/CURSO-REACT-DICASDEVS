@@ -1,0 +1,28 @@
+O react é uma biblioteca para criação de interfaces gráficas. Tanto web quanto mobile
+
+
+// COMANDOS
+npx create-react-app cria um ambiente completo de trabalho com react
+
+// COMPONENTES
+Componentes são funções javacript que retornam HTML e JavaScript dinâmico, e que são renderizados do lado do cliente]
+
+
+// STATE/ESTADO
+no caso abaixo eu estou dizendo que a variavel "message" recebe o valor de "olá, galeris", com o useState() e que ela respondera a função "set_message"
+Quando eu executo a função set_message, ela troca o valor da variavel para "hello, mundio"
+const App = () => {
+    const [message, set_message] = useState("Olá, galeris")
+    return (
+    <div className="container">
+      {message}
+      <button onClick={() => {set_message("hello, mundio!")}}> 
+      </button>
+    </div>
+    )
+}
+
+// PROPS
+props é uma variavel global que carrega todas os parametros que eu passar dentro dos componentes filhos
+
+
